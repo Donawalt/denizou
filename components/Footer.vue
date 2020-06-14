@@ -6,9 +6,10 @@
 
 <style lang="scss" scoped>
     div{
-        height: 25vh;
+        min-height: 25vh;
         margin-left: 11.25vw;
         margin-right: 11.25vw;
+        margin-bottom: 64px;
         p{
             font-size: 100px;
             font-family: Arial, Helvetica, sans-serif;
