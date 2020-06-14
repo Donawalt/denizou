@@ -24,6 +24,9 @@ export default {
 $background-color: #232424;
 $main-blue: #046BD9;
 $main-pink: #FFAFAF;
+html{
+  background-color: $background-color;
+}
 body{
     background-color: $background-color;
     overflow-x: hidden;

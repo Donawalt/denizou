@@ -107,7 +107,29 @@ DENIZOU est adhérent à l’Union nationale des Économistes de la construction
 </template>
 
 <script>
+import anime from 'animejs'
 export default {
+  mounted:()=>{
+    let tl = anime.timeline({
+      duration: 2000
+    })
+
+    tl.add({
+      targets: 'body', 
+      opacity: [0, 1]
+    }).add({
+      targets: '.main-content-home img',
+      easing: "easeInOutQuad",
+      translateY: ["-50%", 0],
+      opacity: [0, 1],
+    }, -500).add({
+      targets: '.main-content-home h1',
+      easing: "easeOutQuad",
+      translateY: ["25%", 0],
+      opacity: [0,1],
+      duration: 800
+    }, "-=1500")
+  }
 }
 </script>
 
