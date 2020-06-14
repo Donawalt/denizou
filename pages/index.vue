@@ -43,17 +43,17 @@ DENIZOU est adhérent à l’Union nationale des Économistes de la construction
           <h3>Hôpital Édouard‑Herriot</h3>
         </nuxt-link>
       </div>
-      <button><nuxt-link to="">En voir plus</nuxt-link></button>
+      <button><nuxt-link to="/projets">En voir plus</nuxt-link></button>
     </section>
     <section class="information">
       <div class="info-component">
         <h2>Organisations</h2>
         <p>Notre Cabinet est composé de 11 Économistes de la Construction de niveau BTS et DUT et de 3 secrétaires techniques et 2 comptables. Chaque opération est pilotée par un Chef de Projet, celui-ci est secondé par deux, voir trois, techniciens dans les phases d’études PRO/DCE. Le Chef de Projet est l’interlocuteur privilégié des autres partenaires de l’équipe de conception.</p>
-      </div>
-      <img class='info-img' src='~/assets/images/illu-orga.png'>
+      </div> 
+      <img class='info-img rellax' src='~/assets/images/illu-orga.png' data-rellax-speed="-1">
     </section>
     <section class="information reverse">
-      <img class='info-img' src='~/assets/images/illu-mission.png'>
+      <img class='info-img rellax' src='~/assets/images/illu-mission.png' data-rellax-speed="1">
       <div class="info-component">
         <h2>Missions</h2>
         <p>A.M.O. : Assistance à Maitrise d’Ouvrage (Description et références)<br>
@@ -84,10 +84,10 @@ DENIZOU est adhérent à l’Union nationale des Économistes de la construction
       <br>
         Nous sommes habitués à travailler au sein d’équipe de conception pluridisciplinaire dans le respect de chacun des intervenants. Nous intégrons sur tous nos projets, les notions de Qualité Environnementale des Bâtiments en veillant au respect des enveloppes budgétaires allouées.</p>
       </div>
-      <img class='info-img' src='~/assets/images/illu-act.png'>
+      <img class='info-img rellax' src='~/assets/images/illu-act.png' data-rellax-speed="-1">
     </section>
     <section class="information reverse">
-      <img class='info-img' src='~/assets/images/illu-bim.png'>
+      <img class='info-img rellax' src='~/assets/images/illu-bim.png' data-rellax-speed="1">
       <div class="info-component">
         <h2>BIM</h2>
         <p>Depuis 2017 nous intégrons le BIM au travers des maquettes IFC pour nos quantitatifs. Dans cet esprit nous développons une synergie autour du BIM et ces applications avec deux autres bureaux d'étude - DPI Structure et STREM (BE fluides) - au travers de la société OCABIM.</p>
@@ -101,30 +101,35 @@ DENIZOU est adhérent à l’Union nationale des Économistes de la construction
           ATTIC+ : Descriptifs, Quantitatifs en IFC (par maquette BIM)<br>
           AUTOCAD</p>
       </div>
-      <img class='info-img' src='~/assets/images/illu-software.png'>
+      <img class='info-img rellax' src='~/assets/images/illu-software.png' data-rellax-speed="-1">
     </section>
   </div>
 </template>
 
 <script>
 import anime from 'animejs'
+import Rellax from 'rellax'
 export default {
   mounted:()=>{
+    var rellax = new Rellax('.rellax', {
+    center:true
+  });
+
     let tl = anime.timeline({
       duration: 2000
     })
 
     tl.add({
-      targets: 'body', 
+      targets: '.container', 
       opacity: [0, 1]
     }).add({
       targets: '.main-content-home img',
       easing: "easeInOutQuad",
       translateY: ["-50%", 0],
       opacity: [0, 1],
-    }, -500).add({
+    }, "-=500").add({
       targets: '.main-content-home h1',
-      easing: "easeOutQuad",
+      easing: "easeInOutQuad",
       translateY: ["25%", 0],
       opacity: [0,1],
       duration: 800
@@ -223,6 +228,7 @@ export default {
           color: #FFAFAF;
           font-weight: lighter;
           font-family: Arial, Helvetica, sans-serif;
+          line-height: 153%;
         }
         grid-column: 1/3;
       }
