@@ -15,7 +15,7 @@ DENIZOU est adhérent à l’Union nationale des Économistes de la construction
   <section class='projects'>
       <h2>Nos Projets</h2>
       <div class="project-wrapper grid-2">
-        <nuxt-link class="project item" to="">
+        <nuxt-link class="project item" to="/project-example">
           <div><img src='~/assets/images/illu-refuge.png'></div>
           <p>Saint-gervais</p>
           <h3>Refuge du GOUTER</h3>
