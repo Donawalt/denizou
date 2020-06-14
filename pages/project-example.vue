@@ -39,10 +39,11 @@
             </div>
             <div>
                 <h3>Composition de l’équipe</h3>
-                <p>CLUB ALPIN Français <br>
-                Fédération française des clubs alpins et de montagne <br>
-                24 avenue de Laumière 75019 PARIS <br>
-                M. Pietu - Tél : 01.53.72.87.00 </p>
+                <p>Architecte : Groupe H, DécaLaage Architecture<br>
+                    BET Fluides : STREM <br>
+                    Simulations thermiques : Albédo Énergie <br>
+                    BET Structure fondations : Betech <br>
+                    Ingénieur bois : Charpente Concept </p>
             </div>
         </div>
     </section>
