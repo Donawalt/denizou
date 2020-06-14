@@ -1,0 +1,22 @@
+{
+  "name": "denizou",
+  "version": "1.0.0",
+  "description": "Website of an economiste in construction ",
+  "author": "Donawalt ",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "animejs": "^3.2.0",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.8",
+    "sass-loader": "^8.0.2"
+  }
+}
